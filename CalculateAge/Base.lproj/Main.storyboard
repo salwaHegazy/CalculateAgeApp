@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculateAge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Your Birthday Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cse-gD-fqv">
+                                <rect key="frame" x="16" y="20" width="343" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="kXD-sN-RBM">
+                                <rect key="frame" x="16" y="71" width="343" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="552750947.79142594">
+                                    <!--2018-07-08 13:55:47 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1v-n9-Jcg">
+                                <rect key="frame" x="16" y="395" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34L-2s-Zeq">
+                                <rect key="frame" x="55" y="350" width="265" height="30"/>
+                                <color key="backgroundColor" red="0.26961536744470416" green="0.27510320378386821" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ewe-NV-Sdg"/>
+                                    <constraint firstAttribute="width" constant="265" id="lut-X1-vuo"/>
+                                </constraints>
+                                <state key="normal" title="Get Age">
+                                    <color key="titleColor" red="0.9947897264696558" green="1" blue="0.96033814672348217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buGetAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iGL-ub-kOF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="34L-2s-Zeq" firstAttribute="top" secondItem="kXD-sN-RBM" secondAttribute="bottom" constant="61" id="54r-as-4SP"/>
+                            <constraint firstItem="Cse-gD-fqv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6bJ-yt-e0Y"/>
+                            <constraint firstItem="Cse-gD-fqv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AFd-yB-6NF"/>
+                            <constraint firstItem="kXD-sN-RBM" firstAttribute="leading" secondItem="Cse-gD-fqv" secondAttribute="leading" id="Jab-Tq-Y4S"/>
+                            <constraint firstItem="kXD-sN-RBM" firstAttribute="top" secondItem="Cse-gD-fqv" secondAttribute="bottom" constant="32.5" id="Kss-Dq-McW"/>
+                            <constraint firstItem="J1v-n9-Jcg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PF0-YU-hvg"/>
+                            <constraint firstItem="kXD-sN-RBM" firstAttribute="trailing" secondItem="Cse-gD-fqv" secondAttribute="trailing" id="VO9-qq-DtE"/>
+                            <constraint firstItem="J1v-n9-Jcg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WrS-2a-IiL"/>
+                            <constraint firstItem="Cse-gD-fqv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bB8-WL-50J"/>
+                            <constraint firstItem="J1v-n9-Jcg" firstAttribute="top" secondItem="34L-2s-Zeq" secondAttribute="bottom" constant="17" id="bdx-hG-Fk0"/>
+                            <constraint firstItem="Cse-gD-fqv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="loZ-3L-9tx"/>
+                            <constraint firstItem="Cse-gD-fqv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mcK-Z8-P58"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="34L-2s-Zeq" secondAttribute="trailing" constant="11" id="ooq-0v-TSI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="34L-2s-Zeq" secondAttribute="trailing" constant="11" id="p7Q-Hg-PFW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DatePicker" destination="kXD-sN-RBM" id="wA3-Um-hbP"/>
+                        <outlet property="laDisplay" destination="J1v-n9-Jcg" id="a9b-Tk-AZK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99.375" y="122.53521126760563"/>
+        </scene>
+    </scenes>
+</document>
